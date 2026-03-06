@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reisen | Fotografie Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .gallery-hero {
+            background: #fdfde0;
+            padding: 120px 0 60px;
+        }
+
+        .container-thin {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .back-nav {
+            position: fixed;
+            top: 40px;
+            left: 40px;
+            z-index: 100;
+        }
+
+        .btn-back {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #6a8d73;
+            color: #f4fdd9;
+            padding: 12px 24px;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(106, 141, 115, 0.2);
+            text-decoration: none;
+        }
+
+        .btn-back:hover {
+            transform: translateX(-5px);
+            background: #000;
+            color: #fff;
+        }
+
+        .photo-masonry {
+            columns: 3;
+            column-gap: 20px;
+            padding: 40px 0 100px;
+        }
+
+        @media (max-width: 900px) {
+            .photo-masonry {
+                columns: 2;
+                column-gap: 15px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .photo-masonry {
+                columns: 1;
+            }
+        }
+
+        .photo-card {
+            break-inside: avoid;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fdfde0;
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            cursor: zoom-in;
+        }
+
+        .photo-card img {
+            width: 100%;
+            display: block;
+            transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .photo-card:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            z-index: 10;
+        }
+
+        .photo-card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back-nav">
+        <a href="index.html#photo-travel" class="btn-back">
+            <i data-lucide="arrow-left"></i> Zurück zum Portfolio
+        </a>
+    </div>
+
+    <header class="gallery-hero">
+        <div class="container-thin">
+            <div class="badge" style="margin-bottom: 20px;">Fotografie</div>
+            <h1
+                style="font-size: clamp(3rem, 8vw, 5rem); font-weight: 800; line-height: 1; letter-spacing: -3px; margin-bottom: 20px;">
+                Reisen.
+            </h1>
+            <p style="font-size: 1.2rem; max-width: 600px; color: #5c6b5d; font-weight: 500;">
+                Momente aus aller Welt, neue Kulturen und die Magie des Unterwegsseins.
+            </p>
+        </div>
+    </header>
+
+    <!-- Animated Photography Ticker -->
+    <div class="skills-bar" style="margin-top: 0; border-top: 0; background: #6a8d73; color: #f4fdd9;">
+        <div class="skills-track">
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="globe"></i> World Exploration</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="camera"></i> Storytelling</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="map"></i> Documentation</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="compass"></i> Discovery</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+
+            <!-- Loop 2 -->
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="globe"></i> World Exploration</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="camera"></i> Storytelling</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="map"></i> Documentation</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="compass"></i> Discovery</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+        </div>
+    </div>
+
+    <main class="container-thin">
+        <div class="photo-masonry">
+            <!-- First item with our real photo -->
+            <div class="photo-card">
+                <img src="assets/travel_photo.jpg" alt="Reisen Fotografie">
+            </div>
+
+            <!-- Placeholders for more travel photos -->
+            <div class="photo-card">
+                <img src="assets/project_mockup.jpg" alt="Reisen 2" style="filter: saturate(1.2);">
+            </div>
+
+            <div class="photo-card">
+                <img src="assets/travel_photo.jpg" alt="Reisen 3">
+            </div>
+
+            <div class="photo-card">
+                <img src="assets/project_mockup.jpg" alt="Reisen 4" style="filter: sepia(0.2);">
+            </div>
+
+            <div class="photo-card">
+                <img src="assets/travel_photo.jpg" alt="Reisen 5">
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-cta">
+                <h2 class="reveal">Projekt anfragen?</h2>
+                <a href="mailto:theresiahentschel154@gmail.com" class="footer-email">theresiahentschel154@gmail.com</a>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-brand">
+                    <span class="name-script">Theresia Hentschel</span>
+                    <p>© 2024 Media Design Portfolio</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <div class="footer-nav-col">
+                        <span>Socials</span>
+                        <a href="https://instagram.com" target="_blank"><i data-lucide="instagram"></i> Instagram</a>
+                        <a href="#"><i data-lucide="linkedin"></i> LinkedIn</a>
+                    </div>
+                    <div class="footer-nav-col">
+                        <span>Legal</span>
+                        <a href="#">Impressum</a>
+                        <a href="#">Datenschutz</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // lucide.createIcons(); // Now handled in script.js
+    </script>
+</body>
+
+</html>

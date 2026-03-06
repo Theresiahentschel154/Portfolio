@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temova | Projekt-Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .project-hero {
+            background: #fdfde0;
+            padding: 120px 0 80px;
+            text-align: left;
+        }
+
+        .container-thin {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 1px solid rgba(106, 141, 115, 0.2);
+        }
+
+        .meta-item span {
+            display: block;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #6a8d73;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .meta-item p {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .research-section {
+            padding: 100px 0;
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 40px;
+        }
+
+        .figma-section {
+            background: #f8f9f8;
+            padding: 100px 0;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 24px;
+            background: #000;
+            margin: 40px 0;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .frame-slider-container {
+            position: relative;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .frame-slider {
+            display: flex;
+            gap: 30px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 20px 0;
+            scrollbar-width: none;
+        }
+
+        .frame-slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .frame-item {
+            flex: 0 0 auto;
+            width: 280px;
+        }
+
+        .frame-item img {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: #6a8d73;
+            color: #f4fdd9;
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .slider-nav:hover {
+            background: #000;
+            color: #fff;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .slider-nav.prev {
+            left: -25px;
+        }
+
+        .slider-nav.next {
+            right: -25px;
+        }
+
+        .back-nav {
+            position: fixed;
+            top: 40px;
+            left: 40px;
+            z-index: 100;
+        }
+
+        .btn-back {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #6a8d73;
+            color: #f4fdd9;
+            padding: 12px 24px;
+            border-radius: 100px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(106, 141, 115, 0.2);
+            text-decoration: none;
+        }
+
+        .btn-back:hover {
+            transform: translateX(-5px);
+            background: #000;
+            color: #fff;
+        }
+
+        h2 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Premium Back Button -->
+    <div class="back-nav">
+        <a href="index.html#project-temova" class="btn-back">
+            <i data-lucide="arrow-left"></i> Zurück zum Portfolio
+        </a>
+    </div>
+
+    <!-- Project Hero -->
+    <header class="project-hero" style="position: relative; overflow: hidden;">
+        <!-- Floating decorative element -->
+        <i data-lucide="zap" class="floating-hero-icon"
+            style="position: absolute; right: 8%; top: 15%; font-size: 20rem; color: rgba(106, 141, 115, 0.05); transform: rotate(-15deg); pointer-events: none; width: 300px; height: 300px;"></i>
+
+        <div class="container-thin">
+            <div class="badge" style="margin-bottom: 20px;">Uni Projekt 2024</div>
+            <h1 class="reveal"
+                style="font-size: clamp(3rem, 8vw, 5rem); font-weight: 800; line-height: 1; letter-spacing: -3px; margin-bottom: 30px;">
+                Temo<span style="color: #6a8d73;">va.</span>
+            </h1>
+            <p style="font-size: 1.4rem; max-width: 600px; color: #5c6b5d; font-weight: 500;">
+                Vollständig funktionsfähige Skill-Austausch App – Wissen teilen, gemeinsam wachsen.
+            </p>
+
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span>Rolle</span>
+                    <p>Product Design & Vision</p>
+                </div>
+                <div class="meta-item">
+                    <span>Zeitraum</span>
+                    <p>5 Monate</p>
+                </div>
+                <div class="meta-item">
+                    <span>Tools</span>
+                    <p>Figma</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <a href="#" class="btn primary"
+                    style="display: inline-flex; align-items: center; gap: 12px; padding: 14px 28px;">
+                    <i data-lucide="file-text"></i> Komplettes Projekt Lesen (PDF)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Animated Project Ticker -->
+    <div class="skills-bar" style="margin-top: 0; border-top: 0; background: #6a8d73; color: #f4fdd9;">
+        <div class="skills-track">
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="zap"></i> Product Thinking</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="share-2"></i> Skill Sharing</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="users"></i> Community</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="mouse-pointer-click"></i> Interaction Design
+            </div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="figma"></i> Figma</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+
+            <!-- Loop 2 -->
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="zap"></i> Product Thinking</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="share-2"></i> Skill Sharing</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="users"></i> Community</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="mouse-pointer-click"></i> Interaction Design
+            </div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="figma"></i> Figma</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+
+            <!-- Loop 3 -->
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="zap"></i> Product Thinking</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="share-2"></i> Skill Sharing</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="users"></i> Community</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="mouse-pointer-click"></i> Interaction Design
+            </div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="figma"></i> Figma</div>
+            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+        </div>
+    </div>
+
+    <!-- Research Section -->
+    <section class="research-section">
+        <div class="container-thin">
+            <h2 class="reveal">Product Thinking</h2>
+            <p>
+                In einer sich schnell verändernden Welt ist lebenslanges Lernen essenziell. Temova wurde nach dem
+                <strong>Design Thinking Prinzip</strong> entwickelt, um den informellen Austausch von Wissen zwischen
+                Privatpersonen zu fördern.
+            </p>
+
+            <div class="research-grid">
+                <div class="research-card reveal">
+                    <h3 style="margin-bottom: 15px; color: #6a8d73;">User Goals</h3>
+                    <p style="font-size: 0.95rem;">Besucher wollen neue Skills lernen, ohne herkömmliche Kurse besuchen
+                        zu müssen – im Austausch gegen ihr eigenes Wissen.</p>
+                </div>
+                <div class="research-card reveal" style="transition-delay: 0.1s;">
+                    <h3 style="margin-bottom: 15px; color: #6a8d73;">Markt-Analyse</h3>
+                    <p style="font-size: 0.95rem;">Unterstützung lokaler Communities durch eine niedrigschwellige
+                        Skill-Share Plattform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video / Showcase -->
+    <section class="research-section" style="background: #6a8d73; color: #f4fdd9;">
+        <div class="container-thin">
+            <h2 style="color: #f4fdd9; text-align: center;">Vollständiger Walkthrough</h2>
+            <div class="video-container" style="background: rgba(244, 253, 217, 0.1);">
+                <div
+                    style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.05);">
+                    <p style="color: rgba(244, 253, 217, 0.5);">[ Hier später dein Video einfügen ]</p>
+                </div>
+            </div>
+            <p style="text-align: center; opacity: 0.7; font-size: 0.9rem;">Demonstration der Key UX-Flows und des
+                Prototyps.</p>
+        </div>
+    </section>
+
+    <!-- Figma Frames -->
+    <section class="figma-section">
+        <div class="container-thin">
+            <h2>Design Details</h2>
+            <p>Einblick in die visuelle Welt der Temova App.</p>
+
+            <div class="frame-slider-container">
+                <button class="slider-nav prev" onclick="scrollSlider(-1)">
+                    <i data-lucide="chevron-left"></i>
+                </button>
+
+                <div class="frame-slider" id="frameSlider">
+                    <div class="frame-item">
+                        <img src="assets/temova_mockup.jpg" alt="Temova Frame 1">
+                        <p
+                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: #6a8d73; text-transform: uppercase; letter-spacing: 1px;">
+                            Discover Feed</p>
+                    </div>
+                    <div class="frame-item">
+                        <img src="assets/temova_mockup.jpg" alt="Temova Frame 2">
+                        <p
+                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: #6a8d73; text-transform: uppercase; letter-spacing: 1px;">
+                            Profile View</p>
+                    </div>
+                    <div class="frame-item">
+                        <img src="assets/temova_mockup.jpg" alt="Temova Frame 3">
+                        <p
+                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: #6a8d73; text-transform: uppercase; letter-spacing: 1px;">
+                            Matching Flow</p>
+                    </div>
+                    <div class="frame-item">
+                        <img src="assets/temova_mockup.jpg" alt="Temova Frame 4">
+                        <p
+                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: #6a8d73; text-transform: uppercase; letter-spacing: 1px;">
+                            Chat Interface</p>
+                    </div>
+                </div>
+
+                <button class="slider-nav next" onclick="scrollSlider(1)">
+                    <i data-lucide="chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-cta">
+                <h2 class="reveal">Projekt anfragen?</h2>
+                <a href="mailto:theresiahentschel154@gmail.com" class="footer-email">theresiahentschel154@gmail.com</a>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-brand">
+                    <span class="name-script">Theresia Hentschel</span>
+                    <p>© 2024 Media Design Portfolio</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <div class="footer-nav-col">
+                        <span>Socials</span>
+                        <a href="https://instagram.com" target="_blank"><i data-lucide="instagram"></i> Instagram</a>
+                        <a href="#"><i data-lucide="linkedin"></i> LinkedIn</a>
+                    </div>
+                    <div class="footer-nav-col">
+                        <span>Legal</span>
+                        <a href="#">Impressum</a>
+                        <a href="#">Datenschutz</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // lucide.createIcons(); // Now handled in script.js
+
+        function scrollSlider(direction) {
+            const slider = document.getElementById('frameSlider');
+            const scrollAmount = 310;
+            slider.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>

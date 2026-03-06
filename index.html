@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | UI/UX Designer & Creative Coder</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Modernes Portfolio eines Mediendesign-Studenten mit Fokus auf UI/UX, Fotografie und Creative Coding.">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Caveat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#projects">Projekte</a></li>
+                <li><a href="#experiments">Experimente</a></li>
+                <li><a href="#photography">Fotografie</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content centered">
+                <span class="hero-name reveal">Theresia Hentschel</span>
+                <h1 class="reveal italic-headline-delay accent-text">MEDIA DESIGN <br><span
+                        class="outline-text">PORTFOLIO</span></h1>
+                <p class="reveal-delay-1 center-subtitle">Fokus auf UI/UX, Fotografie und Creative Coding. Ich baue
+                    digitale Produkte mit Ecken und Kanten.</p>
+                <a href="#about" class="scroll-more reveal-delay-3">Erfahre mehr <i data-lucide="chevron-down"></i></a>
+            </div>
+            <div class="hero-bg-overlay"></div>
+            <canvas id="hero-canvas"></canvas>
+        </section>
+        <div class="content-sheet">
+            <!-- About Preview -->
+            <section class="section" id="about">
+                <div class="about-container side-by-side">
+                    <div class="about-text reveal">
+                        <p class="about-bio-highlight"><span class="name-script">Theresia
+                                Hentschel</span></p>
+                        <div class="about-quick-facts">
+                            <div class="fact-item"><i data-lucide="sparkles"></i> 22 Jahre alt</div>
+                            <div class="fact-item"><i data-lucide="map-pin"></i> Ravensburg / Köln-Bonn</div>
+                        </div>
+                        <p>Eine Mediendesign-Studentin mit einer Leidenschaft für Technologie und menschzentriertes
+                            Design. Mein Ziel ist es, digitale Produkte zu schaffen, die nicht nur schön sind, sondern
+                            echte Probleme lösen.</p>
+                        <p>Mein Fokus liegt darauf, die Lücke zwischen Design und Code zu schließen, um nahtlose
+                            Interaktionen zu ermöglichen.</p>
+                        <a href="mailto:theresiahentschel154@gmail.com" class="btn primary">Kontaktiere mich</a>
+                    </div>
+                    <div class="about-image reveal">
+                        <div class="image-frame">
+                            <img src="assets/portrait_about.jpg" alt="Theresia Hentschel Portrait">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Bar -->
+            <div class="skills-bar">
+                <div class="skills-track">
+                    <!-- Original items -->
+                    <div class="skill-item"><i data-lucide="layout"></i> UI/UX Design</div>
+                    <div class="skill-separator"></div>
+                    <div class="skill-item"><i data-lucide="lightbulb"></i> Product Thinking</div>
+                    <div class="skill-separator"></div>
+                    <div class="skill-item"><i data-lucide="code"></i> Creative Coding</div>
+                    <div class="skill-separator"></div>
+                    <div class="skill-item"><i data-lucide="camera"></i> Fotografie</div>
+                    <div class="skill-separator"></div>
+
+                    <!-- Duplicated items for infinite loop -->
+                    <div class="skill-item"><i data-lucide="layout"></i> UI/UX Design</div>
+                    <div class="skill-separator"></div>
+                    <div class="skill-item"><i data-lucide="lightbulb"></i> Product Thinking</div>
+                    <div class="skill-separator"></div>
+                    <div class="skill-item"><i data-lucide="code"></i> Creative Coding</div>
+                    <div class="skill-separator"></div>
+                    <div class="skill-item"><i data-lucide="camera"></i> Fotografie</div>
+                    <div class="skill-separator"></div>
+
+                    <!-- Third copy for extra smoothness on wide screens -->
+                    <div class="skill-item"><i data-lucide="layout"></i> UI/UX Design</div>
+                    <div class="skill-separator"></div>
+                    <div class="skill-item"><i data-lucide="lightbulb"></i> Product Thinking</div>
+                    <div class="skill-separator"></div>
+                    <div class="skill-item"><i data-lucide="code"></i> Creative Coding</div>
+                    <div class="skill-separator"></div>
+                    <div class="skill-item"><i data-lucide="camera"></i> Fotografie</div>
+                    <div class="skill-separator"></div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <section class="section" id="projects">
+                <div class="section-header">
+                    <h2>Ausgewählte Arbeiten</h2>
+                    <div class="badge">Portfolio '24</div>
+                </div>
+                <div class="projects-grid">
+                    <!-- Case Study 1 -->
+                    <a href="project-gewalt.html" id="project-gewalt" class="project-card reveal"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="project-image">
+                            <img src="assets/project_mockup.jpg" alt="Project Mockup: Creative Design Process">
+                            <div class="project-overlay">
+                                <span class="view-case">Case Study ansehen</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="category">UI/UX Website</span>
+                            <h3>Gewalt gegen Frauen</h3>
+                            <p>Uni Projekt einer Website zum Thema Gewalt gegen Frauen</p>
+                        </div>
+                    </a>
+                    <!-- Case Study 2 -->
+                    <a href="project-wgwizard.html#project-wgwizard" id="project-wgwizard" class="project-card reveal"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="project-image">
+                            <img src="assets/wg_wizard_mockup.jpg" alt="Project Mockup: WG-Wizard App">
+                            <div class="project-overlay">
+                                <span class="view-case">Case Study ansehen</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="category">Interaction Design App</span>
+                            <h3>WG-Wizard</h3>
+                            <p>Uni Projekt einer App für WG-Planung</p>
+                        </div>
+                    </a>
+                    <!-- Case Study 3 -->
+                    <a href="project-temova.html#project-temova" id="project-temova" class="project-card reveal"
+                        style="display: block; text-decoration: none; color: inherit;">
+                        <div class="project-image">
+                            <img src="assets/temova_mockup.jpg" alt="Project Mockup: Temova App">
+                            <div class="project-overlay">
+                                <span class="view-case">Case Study ansehen</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="category">Product Thinking App</span>
+                            <h3>Temova</h3>
+                            <p>Vollständig Funktionsfähige Skill-Austausch App</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+
+            <!-- Creative Coding / Experiments -->
+            <section class="section" id="experiments">
+                <div class="section-header">
+                    <h2>Experimente</h2>
+                    <div class="badge">Creative Coding</div>
+                </div>
+                <div class="experiments-grid">
+                    <div class="exp-card reveal">
+                        <canvas class="exp-canvas" data-type="particles"></canvas>
+                        <div class="exp-overlay">
+                            <h5>Noise Flow</h5>
+                            <p>Perlin Noise Field Simulation</p>
+                        </div>
+                    </div>
+                    <div class="exp-card reveal">
+                        <canvas class="exp-canvas" data-type="geometry"></canvas>
+                        <div class="exp-overlay">
+                            <h5>Hypercube</h5>
+                            <p>4D Vector Data Projection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden Description Text -->
+                <div class="exp-description-container reveal">
+                    <details class="exp-details">
+                        <summary class="exp-summary">
+                            <span>Über diese Experimente</span>
+                            <i data-lucide="chevron-down"></i>
+                        </summary>
+                        <div class="exp-content">
+                            <p>In diesen Experimenten untersuche ich die Verbindung von Mathematik und Design. Durch den
+                                Einsatz von Perlin Noise und vierdimensionalen Vektoren entstehen organische Bewegungen
+                                und komplexe geometrische Formen direkt im Code. Diese Skizzen dienen als Grundlage für
+                                spätere Interaktionsmodelle und visuelle Identitäten.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+
+            <!-- Photography -->
+            <section class="section" id="photography">
+                <div class="section-header">
+                    <h2>Fotografien</h2>
+                    <div class="header-actions">
+                        <a href="#" class="badge">Galerie</a>
+                        <a href="https://unsplash.com/de/@theresiahent" target="_blank" class="badge">Unsplash <i
+                                data-lucide="external-link" style="width: 12px; height: 12px;"></i></a>
+                    </div>
+                </div>
+                <div class="photo-grid">
+                    <a href="photography-architecture.html" id="photo-architecture" class="photo-item tall reveal"
+                        style="display: block; text-decoration: none;">
+                        <img src="assets/architecture_photo.jpg" alt="Architektur Fotografie: Arc de Triomphe Details">
+                        <div class="photo-overlay">
+                            <span>Architektur</span>
+                        </div>
+                    </a>
+                    <a href="photography-nature.html" id="photo-nature" class="photo-item reveal"
+                        style="display: block; text-decoration: none;">
+                        <img src="assets/nature_photo.jpg" alt="Natur Fotografie: Berglandschaft">
+                        <div class="photo-overlay">
+                            <span>Natur</span>
+                        </div>
+                    </a>
+                    <a href="photography-travel.html" id="photo-travel" class="photo-item reveal"
+                        style="display: block; text-decoration: none;">
+                        <img src="assets/travel_photo.jpg" alt="Reisen Fotografie: Surfboards">
+                        <div class="photo-overlay">
+                            <span>Reisen</span>
+                        </div>
+                    </a>
+                    <a href="photography-sport.html" id="photo-sport" class="photo-item wide reveal"
+                        style="display: block; text-decoration: none;">
+                        <img src="assets/sport_photo.jpg" alt="Sport Fotografie: Bergsteiger"
+                            style="object-position: center;">
+                        <div class="photo-overlay">
+                            <span>Sport</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Design + KI -->
+            <section class="section" id="ai-design">
+                <div class="section-header">
+                    <h2>Design + KI</h2>
+                    <p>Wie ich künstliche Intelligenz in meinen Workflow integriere.</p>
+                </div>
+                <div class="ai-cards">
+                    <div class="ai-card reveal">
+                        <div class="ai-icon"><i data-lucide="brain-circuit"></i></div>
+                        <h3>Ideation</h3>
+                        <p>Schnelle Iterationen durch LLM-gestützte Brainstorming-Sessions und Nutzer-Personas.</p>
+                    </div>
+                    <div class="ai-card reveal">
+                        <div class="ai-icon"><i data-lucide="pencil"></i></div>
+                        <h3>Visual Concepts</h3>
+                        <p>Exploration von Bildsprachen und Moodboards mit generativen Modellen.</p>
+                    </div>
+                    <div class="ai-card reveal">
+                        <div class="ai-icon"><i data-lucide="terminal"></i></div>
+                        <h3>Prototyping</h3>
+                        <p>Effizientes Coding von komplexen Funktionsprototypen durch AI-Assistenz.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-cta">
+                <h2 class="reveal">Projekt anfragen?</h2>
+                <a href="mailto:theresiahentschel154@gmail.com" class="footer-email">theresiahentschel154@gmail.com</a>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-brand">
+                    <span class="name-script">Theresia Hentschel</span>
+                    <p>© 2024 Media Design Portfolio</p>
+                </div>
+
+                <nav class="footer-nav">
+                    <div class="footer-nav-col">
+                        <span>Socials</span>
+                        <a href="https://instagram.com" target="_blank"><i data-lucide="instagram"></i> Instagram</a>
+                        <a href="#"><i data-lucide="linkedin"></i> LinkedIn</a>
+                    </div>
+                    <div class="footer-nav-col">
+                        <span>Legal</span>
+                        <a href="#">Impressum</a>
+                        <a href="#">Datenschutz</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
