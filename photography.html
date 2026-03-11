@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografien | Theresia Hentschel Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Italianno&family=Syne:wght@400;700;800&family=Caveat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body><div class="grainy-overlay"></div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Theresia<span class="logo-accent">Hent</span></a>
+            <ul class="nav-links">
+                <li><a href="about.html">Über mich</a></li>
+                <li><a href="projects.html">Projekte</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-sheet">
+            <!-- Photography Section -->
+            <section class="section" id="photography">
+                <div class="section-header reveal visible">
+                    <h2>Fotografien</h2>
+                    <div class="header-actions">
+                        <a href="https://unsplash.com/de/@theresiahent" target="_blank" class="badge">Unsplash <i
+                                data-lucide="external-link" style="width: 12px; height: 12px;"></i></a>
+                    </div>
+                </div>
+                <div class="photo-grid">
+                    <a href="photography-architecture.html" id="photo-architecture" class="photo-item tall reveal visible"
+                        style="display: block; text-decoration: none;">
+                        <img src="assets/architecture_photo.jpg" alt="Architektur Fotografie: Arc de Triomphe Details">
+                        <div class="photo-overlay">
+                            <span>Architektur</span>
+                        </div>
+                    </a>
+                    <a href="photography-nature.html" id="photo-nature" class="photo-item reveal visible"
+                        style="display: block; text-decoration: none;">
+                        <img src="assets/nature_photo.jpg" alt="Natur Fotografie: Berglandschaft">
+                        <div class="photo-overlay">
+                            <span>Natur</span>
+                        </div>
+                    </a>
+                    <a href="photography-travel.html" id="photo-travel" class="photo-item reveal visible"
+                        style="display: block; text-decoration: none;">
+                        <img src="assets/travel_photo.jpg" alt="Reisen Fotografie: Surfboards">
+                        <div class="photo-overlay">
+                            <span>Reisen</span>
+                        </div>
+                    </a>
+                    <a href="photography-sport.html" id="photo-sport" class="photo-item wide reveal visible"
+                        style="display: block; text-decoration: none;">
+                        <img src="assets/sport_photo.jpg" alt="Sport Fotografie: Bergsteiger"
+                            style="object-position: center;">
+                        <div class="photo-overlay">
+                            <span>Sport</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-row footer-top">
+                <span class="footer-label">Theresia Hentschel</span>
+                <a href="mailto:theresiahentschel154@gmail.com" class="footer-label underline">theresiahentschel154@gmail.com</a>
+            </div>
+            <div class="footer-big-brand">
+                <h2 class="reveal visible outline-text">Theresia Hent</h2>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-row footer-bottom">
+                <span class="footer-label">TH © 2024</span>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#" class="footer-label underline">Impressum</a>
+                    <a href="#" class="footer-label underline">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

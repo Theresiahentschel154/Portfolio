@@ -8,19 +8,17 @@
     <link rel="stylesheet" href="style.css">
     <!-- Using same fonts as main page -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Italianno&family=Syne:wght@400;700;800&family=Caveat:wght@400;700&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body {
-            background: #ffffff;
-            color: #000000;
-        }
+
 
         .project-hero {
-            background: #fdfde0;
+            background: var(--bg-sage);
             padding: 120px 0 80px;
             text-align: left;
+            color: var(--text-dark);
         }
 
         .container-thin {
@@ -34,7 +32,7 @@
             gap: 40px;
             margin-top: 40px;
             padding-top: 40px;
-            border-top: 1px solid rgba(106, 141, 115, 0.2);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
         }
 
         .meta-item span {
@@ -42,7 +40,7 @@
             font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            color: #6a8d73;
+            color: rgba(0, 0, 0, 0.5);
             font-weight: 800;
             margin-bottom: 5px;
         }
@@ -50,10 +48,13 @@
         .meta-item p {
             font-weight: 600;
             font-size: 1rem;
+            color: var(--text-dark);
         }
 
         .research-section {
             padding: 100px 0;
+            background: #ffffff;
+            color: var(--text-dark);
         }
 
         .research-grid {
@@ -64,7 +65,7 @@
         }
 
         .figma-section {
-            background: #f8f9f8;
+            background: #ffffff;
             padding: 100px 0;
         }
 
@@ -131,8 +132,8 @@
             transform: translateY(-50%);
             width: 50px;
             height: 50px;
-            background: #6a8d73;
-            color: #f4fdd9;
+            background: var(--accent-orange);
+            color: #000;
             border: none;
             border-radius: 50%;
             display: flex;
@@ -146,7 +147,7 @@
 
         .slider-nav:hover {
             background: #000;
-            color: #fff;
+            color: var(--accent-orange);
             transform: translateY(-50%) scale(1.1);
         }
 
@@ -169,38 +170,43 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            background: #6a8d73;
-            color: #f4fdd9;
+            background: rgba(0,0,0,0.05);
+            color: var(--text-dark);
+            backdrop-filter: blur(10px);
             padding: 12px 24px;
             border-radius: 100px;
             font-weight: 700;
             font-size: 0.9rem;
             transition: all 0.3s ease;
-            box-shadow: 0 10px 20px rgba(106, 141, 115, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0,0,0,0.1);
         }
 
         .btn-back:hover {
             transform: translateX(-5px);
-            background: #000;
-            color: #fff;
+            background: var(--accent-orange);
+            color: #000;
+            border-color: var(--accent-orange);
         }
 
         h2 {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 2.5rem;
+            font-family: var(--font-heading);
+            font-size: 3.5rem;
             margin-bottom: 30px;
-            letter-spacing: -1px;
+            letter-spacing: -2px;
+            text-transform: uppercase;
         }
 
         p {
             line-height: 1.6;
-            color: #555;
-            font-size: 1.1rem;
+            color: var(--text-dark);
+            font-size: 1.2rem;
+            opacity: 0.9;
         }
     </style>
 </head>
 
-<body>
+<body><div class="grainy-overlay"></div>
     <!-- Premium Back Button -->
     <div class="back-nav">
         <a href="index.html#project-gewalt" class="btn-back">
@@ -210,37 +216,35 @@
 
     <!-- Project Hero -->
     <header class="project-hero" style="position: relative; overflow: hidden;">
-        <!-- Floating decorative element -->
-        <i data-lucide="heart" class="floating-hero-icon"
-            style="position: absolute; right: 10%; top: 20%; font-size: 20rem; color: rgba(106, 141, 115, 0.05); transform: rotate(15deg); pointer-events: none; width: 300px; height: 300px;"></i>
+
 
         <div class="container-thin">
-            <div class="badge" style="margin-bottom: 20px;">Uni Projekt 2024</div>
+            <span class="category" style="margin-bottom: 20px;">Uni Projekt 2024</span>
             <h1 class="reveal"
-                style="font-size: clamp(3rem, 8vw, 5rem); font-weight: 800; line-height: 1; letter-spacing: -3px; margin-bottom: 30px;">
-                Gewalt gegen <br><span style="color: #6a8d73;">Frauen.</span>
+                style="font-family: var(--font-heading); font-size: clamp(3rem, 8vw, 5rem); font-weight: 800; line-height: 1; letter-spacing: -3px; margin-bottom: 30px; text-transform: uppercase;">
+                Gewalt gegen <br><span style="color: #ffffff;">Frauen.</span>
             </h1>
-            <p style="font-size: 1.4rem; max-width: 600px; color: #5c6b5d; font-weight: 500;">
+            <p style="font-size: 1.4rem; max-width: 600px; color: rgba(0, 0, 0, 0.7); font-weight: 500;">
                 Eine digitale Plattform zur Aufklärung, Prävention und Unterstützung von Betroffenen.
             </p>
 
             <div class="project-meta">
-                <div class="meta-item">
+                <div class="meta-item reveal reveal-delay-1">
                     <span>Rolle</span>
                     <p>UX/UI Research & Design</p>
                 </div>
-                <div class="meta-item">
+                <div class="meta-item reveal reveal-delay-2">
                     <span>Zeitraum</span>
                     <p>4 Monate</p>
                 </div>
-                <div class="meta-item">
+                <div class="meta-item reveal reveal-delay-3">
                     <span>Tools</span>
                     <p>Figma</p>
                 </div>
             </div>
 
             <div style="margin-top: 40px;">
-                <a href="assets/research-gewalt.pdf" target="_blank" class="btn primary"
+                <a href="assets/research-gewalt.pdf" target="_blank" class="btn btn-accent"
                     style="display: inline-flex; align-items: center; gap: 12px; padding: 14px 28px;">
                     <i data-lucide="file-text"></i> Komplettes Projekt Lesen (PDF)
                 </a>
@@ -249,66 +253,62 @@
     </header>
 
     <!-- Animated Project Ticker -->
-    <div class="skills-bar" style="margin-top: 0; border-top: 0; background: #6a8d73; color: #f4fdd9;">
+    <div class="skills-bar" style="margin-top: 0; border-top: 0; background: #ffffff; color: var(--text-dark);">
         <div class="skills-track">
             <!-- Set 1 -->
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="shield"></i> Awareness</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="search"></i> Research</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="lock"></i> Safety First</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="layout"></i> UX Design</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="figma"></i> Figma</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="shield" style="color: var(--accent-orange);"></i> Awareness</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="search" style="color: var(--accent-orange);"></i> Research</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="lock" style="color: var(--accent-orange);"></i> Safety First</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="layout" style="color: var(--accent-orange);"></i> UX Design</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="figma" style="color: var(--accent-orange);"></i> Figma</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
 
             <!-- Set 2 -->
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="shield"></i> Awareness</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="search"></i> Research</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="lock"></i> Safety First</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="layout"></i> UX Design</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="figma"></i> Figma</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="shield" style="color: var(--accent-orange);"></i> Awareness</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="search" style="color: var(--accent-orange);"></i> Research</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="lock" style="color: var(--accent-orange);"></i> Safety First</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="layout" style="color: var(--accent-orange);"></i> UX Design</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="figma" style="color: var(--accent-orange);"></i> Figma</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
 
             <!-- Set 3 -->
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="shield"></i> Awareness</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="search"></i> Research</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="lock"></i> Safety First</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="layout"></i> UX Design</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
-            <div class="skill-item" style="color: #f4fdd9;"><i data-lucide="figma"></i> Figma</div>
-            <div class="skill-separator" style="background: rgba(244, 253, 217, 0.3);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="shield" style="color: var(--accent-orange);"></i> Awareness</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="search" style="color: var(--accent-orange);"></i> Research</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="lock" style="color: var(--accent-orange);"></i> Safety First</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="layout" style="color: var(--accent-orange);"></i> UX Design</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
+            <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="figma" style="color: var(--accent-orange);"></i> Figma</div>
+            <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
         </div>
     </div>
 
     <!-- Research Section -->
     <section class="research-section">
         <div class="container-thin">
-            <h2 class="reveal">Die Research Phase</h2>
-            <p>
-                Um ein so sensibles Thema angemessen zu behandeln, basierte das gesamte Design auf dem <strong>Design
-                    Thinking Prinzip</strong> und einer darauf aufbauenden intensiven Research-Phase. Wir analysierten
-                bestehende Hilfsangebote und identifizierten Barrieren, die Betroffene davon abhalten, Hilfe zu suchen.
+            <h2 class="reveal">Das Projekt</h2>
+            <p class="reveal">
+                Gewalt gegen Frauen ist ein hochsensibles Thema, das oft mit großen Hürden bei der Suche nach Hilfe verbunden ist. Das Ziel dieses Projekts war es, eine digitale Plattform zu konzipieren, die nicht nur aufklärt, sondern Betroffenen einen sicheren und barrierefreien Zugang zu Hilfsangeboten bietet. Der gesamte Gestaltungsprozess basierte tief auf <strong>empathischem Design und User Research</strong>, um eine Umgebung zu schaffen, die Schutz und Orientierung in Krisensituationen vermittelt.
             </p>
 
             <div class="research-grid">
                 <div class="research-card reveal">
-                    <h3 style="margin-bottom: 15px; color: #6a8d73;">User Personas</h3>
-                    <p style="font-size: 0.95rem;">Entwicklung spezifischer Personas, um die unterschiedlichen
-                        Lebensrealitäten und Bedürfnisse der Nutzerinnen zu verstehen.</p>
+                    <h3 style="margin-bottom: 15px; color: var(--text-dark);">Nutzerzentrierter Ansatz</h3>
+                    <p style="font-size: 0.95rem;">Entwicklung spezifischer Personas und Analysen, um die sensiblen Lebensrealitäten und Bedürfnisse der betroffenen Nutzerinnen tiefgreifend zu verstehen.</p>
                 </div>
                 <div class="research-card reveal" style="transition-delay: 0.1s;">
-                    <h3 style="margin-bottom: 15px; color: #6a8d73;">Safety First</h3>
-                    <p style="font-size: 0.95rem;">Implementierung eines "Quick Exit" Buttons und eines getarnten
-                        Browserverlaufs zum Schutz der Privatsphäre.</p>
+                    <h3 style="margin-bottom: 15px; color: var(--text-dark);">Safety First</h3>
+                    <p style="font-size: 0.95rem;">Implementierung eines "Quick Exit" Buttons und eines getarnten Browserverlaufs, um den absoluten Schutz der Privatsphäre in Notfällen zu gewährleisten.</p>
                 </div>
             </div>
 
@@ -317,14 +317,14 @@
     </section>
 
     <!-- Video / Showcase -->
-    <section class="research-section" style="background: #6a8d73; color: #f4fdd9;">
+    <section class="research-section" style="background: var(--bg-sage); color: var(--text-dark);">
         <div class="container-thin">
-            <h2 style="color: #f4fdd9; text-align: center;">Website Walkthrough</h2>
-            <div class="video-container" style="background: rgba(244, 253, 217, 0.1);">
+            <h2 style="color: var(--text-dark); text-align: center;">Website Walkthrough</h2>
+            <div class="video-container" style="background: rgba(0, 0, 0, 0.1);">
                 <!-- Replace with your actual video file or iframe later -->
                 <div
                     style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.05);">
-                    <p style="color: rgba(244, 253, 217, 0.5);">[ Hier später dein Video einfügen ]</p>
+                    <p style="color: rgba(0, 0, 0, 0.5);">[ Hier später dein Video einfügen ]</p>
                 </div>
             </div>
             <p style="text-align: center; opacity: 0.7; font-size: 0.9rem;">Demonstration der Key-Features und der User
@@ -348,35 +348,35 @@
                     <div class="frame-item">
                         <img src="assets/project_mockup.jpg" alt="Figma Frame 1">
                         <p
-                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: #6a8d73; text-transform: uppercase; letter-spacing: 1px;">
+                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px;">
                             Home Dashboard</p>
                     </div>
                     <!-- Frame 2 -->
                     <div class="frame-item">
                         <img src="assets/project_mockup.jpg" alt="Figma Frame 2">
                         <p
-                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: #6a8d73; text-transform: uppercase; letter-spacing: 1px;">
+                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px;">
                             Resource Library</p>
                     </div>
                     <!-- Frame 3 -->
                     <div class="frame-item">
                         <img src="assets/project_mockup.jpg" alt="Figma Frame 3">
                         <p
-                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: #6a8d73; text-transform: uppercase; letter-spacing: 1px;">
+                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px;">
                             Emergency Contact</p>
                     </div>
                     <!-- Frame 4 -->
                     <div class="frame-item">
                         <img src="assets/project_mockup.jpg" alt="Figma Frame 4">
                         <p
-                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: #6a8d73; text-transform: uppercase; letter-spacing: 1px;">
+                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px;">
                             User Profile</p>
                     </div>
                     <!-- Adding more placeholders to demonstrate scrolling -->
                     <div class="frame-item">
                         <img src="assets/project_mockup.jpg" alt="Figma Frame 5">
                         <p
-                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: #6a8d73; text-transform: uppercase; letter-spacing: 1px;">
+                            style="font-size: 0.8rem; margin-top: 15px; font-weight: 700; color: var(--text-dark); text-transform: uppercase; letter-spacing: 1px;">
                             Information Page</p>
                     </div>
                 </div>
@@ -392,29 +392,34 @@
 
     <footer class="main-footer">
         <div class="footer-container">
-            <div class="footer-cta">
-                <h2 class="reveal">Projekt anfragen?</h2>
-                <a href="mailto:theresiahentschel154@gmail.com" class="footer-email">theresiahentschel154@gmail.com</a>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-brand">
-                    <span class="name-script">Theresia Hentschel</span>
-                    <p>© 2024 Media Design Portfolio</p>
+            <div class="footer-top-grid">
+                <div class="footer-col reveal">
+                    <h4>Follow me</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Behance</a></li>
+                    </ul>
                 </div>
-
-                <nav class="footer-nav">
-                    <div class="footer-nav-col">
-                        <span>Socials</span>
-                        <a href="https://instagram.com" target="_blank"><i data-lucide="instagram"></i> Instagram</a>
-                        <a href="#"><i data-lucide="linkedin"></i> LinkedIn</a>
-                    </div>
-                    <div class="footer-nav-col">
-                        <span>Legal</span>
-                        <a href="#">Impressum</a>
-                        <a href="#">Datenschutz</a>
-                    </div>
-                </nav>
+                <div class="footer-col reveal">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:theresiahentschel154@gmail.com">theresiahentschel154@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-brand-huge reveal">
+            <div class="footer-brand-track">
+                <h2>THERESIA HENTSCHEL</h2>
+                <h2>THERESIA HENTSCHEL</h2>
             </div>
         </div>
     </footer>

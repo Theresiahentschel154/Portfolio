@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimente | Theresia Hentschel Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Italianno&family=Syne:wght@400;700;800&family=Caveat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body><div class="grainy-overlay"></div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Theresia<span class="logo-accent">Hent</span></a>
+            <ul class="nav-links">
+                <li><a href="about.html">Über mich</a></li>
+                <li><a href="projects.html">Projekte</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-sheet">
+            <!-- Creative Coding / Experiments -->
+            <section class="section" id="experiments">
+                <div class="section-header reveal visible">
+                    <h2>Experimente</h2>
+                    <div class="badge">Creative Coding</div>
+                </div>
+                <div class="experiments-grid">
+                    <div class="exp-card reveal visible">
+                        <canvas class="exp-canvas" data-type="particles"></canvas>
+                        <div class="exp-overlay">
+                            <h5>Noise Flow</h5>
+                            <p>Perlin Noise Field Simulation</p>
+                        </div>
+                    </div>
+                    <div class="exp-card reveal visible">
+                        <canvas class="exp-canvas" data-type="geometry"></canvas>
+                        <div class="exp-overlay">
+                            <h5>Hypercube</h5>
+                            <p>4D Vector Data Projection</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-description-container reveal visible">
+                    <details class="exp-details">
+                        <summary class="exp-summary">
+                            <span>Über diese Experimente</span>
+                            <i data-lucide="chevron-down"></i>
+                        </summary>
+                        <div class="exp-content">
+                            <p>In diesen Experimenten untersuche ich die Verbindung von Mathematik und Design. Durch den
+                                Einsatz von Perlin Noise und vierdimensionalen Vektoren entstehen organische Bewegungen
+                                und komplexe geometrische Formen direkt im Code.</p>
+                        </div>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-row footer-top">
+                <span class="footer-label">Theresia Hentschel</span>
+                <a href="mailto:theresiahentschel154@gmail.com" class="footer-label underline">theresiahentschel154@gmail.com</a>
+            </div>
+            <div class="footer-big-brand">
+                <h2 class="reveal visible outline-text">Theresia Hent</h2>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-row footer-bottom">
+                <span class="footer-label">TH © 2024</span>
+                <div style="display: flex; gap: 20px;">
+                    <a href="#" class="footer-label underline">Impressum</a>
+                    <a href="#" class="footer-label underline">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

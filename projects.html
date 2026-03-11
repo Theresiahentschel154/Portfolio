@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekte | Theresia Hentschel Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Italianno&family=Syne:wght@400;700;800&family=Caveat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body><div class="grainy-overlay"></div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Theresia<span class="logo-accent">Hent</span></a>
+            <ul class="nav-links">
+                <li><a href="about.html">Über mich</a></li>
+                <li><a href="projects.html">Projekte</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-sheet">
+            <!-- All Projects Section -->
+            <section class="section" id="all-projects">
+                <div class="section-header reveal visible">
+                    <div class="badge">Portfolio '24</div>
+                    <h2>Design <br>Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- Projekt 1: Temova -->
+                    <a href="project-temova.html" class="project-card reveal visible">
+                        <div class="project-image">
+                            <img src="assets/temova_mockup.jpg" alt="Temova App">
+                            <div class="project-overlay">
+                                <span class="category">Product Thinking App</span>
+                                <h3>Temova <br>App</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Projekt 2: Gewalt gegen Frauen -->
+                    <a href="project-gewalt.html" class="project-card reveal visible">
+                        <div class="project-image">
+                            <img src="assets/project_mockup.jpg" alt="Gewalt gegen Frauen Website">
+                            <div class="project-overlay">
+                                <span class="category">UI/UX Website</span>
+                                <h3>Gewalt <br>gegen <br>Frauen</h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Projekt 3: WG-Wizard -->
+                    <a href="project-wgwizard.html" class="project-card reveal visible">
+                        <div class="project-image">
+                            <img src="assets/wg_wizard_mockup.jpg" alt="WG-Wizard App">
+                            <div class="project-overlay">
+                                <span class="category">Interaction Design App</span>
+                                <h3>WG-Wizard <br>App</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Photography Section -->
+            <section class="section" id="photography">
+                <div class="section-header reveal visible">
+                    <div class="badge">Unsplash Photographer</div>
+                    <h2>Photos</h2>
+                    <div class="header-actions">
+                        <a href="https://unsplash.com/de/@theresiahent" target="_blank" class="badge">Unsplash <i data-lucide="external-link" style="width: 12px; height: 12px;"></i></a>
+                    </div>
+                </div>
+                <div class="photo-grid">
+                    <a href="photography-architecture.html" id="photo-architecture" class="photo-item tall reveal">
+                        <img src="assets/architecture_photo.jpg" alt="Architektur Fotografie">
+                        <div class="photo-overlay"><span>Architektur</span></div>
+                    </a>
+                    <a href="photography-nature.html" id="photo-nature" class="photo-item reveal">
+                        <img src="assets/nature_photo.jpg" alt="Natur Fotografie">
+                        <div class="photo-overlay"><span>Natur</span></div>
+                    </a>
+                    <a href="photography-travel.html" id="photo-travel" class="photo-item reveal">
+                        <img src="assets/travel_photo.jpg" alt="Reisen Fotografie">
+                        <div class="photo-overlay"><span>Reisen</span></div>
+                    </a>
+                    <a href="photography-sport.html" id="photo-sport" class="photo-item wide reveal">
+                        <img src="assets/sport_photo.jpg" alt="Sport Fotografie">
+                        <div class="photo-overlay"><span>Sport</span></div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Experiments Section -->
+            <section class="section" id="experiments">
+                <div class="section-header reveal visible">
+                    <div class="badge">Creative Coding</div>
+                    <h2>Creative <br>Lab</h2>
+                </div>
+                <div class="experiments-grid">
+                    <div class="exp-card reveal">
+                        <canvas class="exp-canvas" data-type="particles"></canvas>
+                        <div class="exp-overlay">
+                            <h5>Noise Flow</h5>
+                            <p>Perlin Noise Field Simulation</p>
+                        </div>
+                    </div>
+                    <div class="exp-card reveal">
+                        <canvas class="exp-canvas" data-type="geometry"></canvas>
+                        <div class="exp-overlay">
+                            <h5>Hypercube</h5>
+                            <p>4D Vector Data Projection</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top-grid">
+                <div class="footer-col reveal">
+                    <h4>Follow me</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Behance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:theresiahentschel154@gmail.com">theresiahentschel154@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Impressum</a></li>
+                        <li><a href="#">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-brand-huge reveal">
+            <div class="footer-brand-track">
+                <h2>THERESIA HENTSCHEL</h2>
+                <h2>THERESIA HENTSCHEL</h2>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

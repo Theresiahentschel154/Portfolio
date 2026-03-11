@@ -1,15 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
     // 2. Scroll Animation (IntersectionObserver)
     const revealElements = document.querySelectorAll('.reveal');
+
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
+                // Optional: stop observing once visible
+                // revealObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1 });
+    }, {
+        threshold: 0.05, // Lower threshold triggers sooner
+        rootMargin: '0px 0px -20px 0px'
+    });
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    // Short delay to ensure browser has calculated initial layouts
+    setTimeout(() => {
+        revealElements.forEach(el => {
+            revealObserver.observe(el);
+            // Check if element is already in viewport on load
+            const rect = el.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                el.classList.add('visible');
+            }
+        });
+    }, 100);
 
     // 3. Hero Particles Animation (Interactive Canvas)
     const heroCanvas = document.getElementById('hero-canvas');
@@ -47,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.vx = (Math.random() - 0.5) * 1.5;
                 this.vy = (Math.random() - 0.5) * 1.5;
                 this.size = Math.random() * 2 + 1;
-                this.color = Math.random() > 0.5 ? '#6a8d73' : '#f4fdd9';
+                this.color = Math.random() > 0.5 ? '#a67c52' : '#6b705c';
                 this.alpha = Math.random() * 0.4 + 0.1;
                 this.originalAlpha = this.alpha;
             }
@@ -172,21 +188,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 10. Navbar Visibility on Scroll
-    window.addEventListener('scroll', () => {
-        const navbar = document.getElementById('navbar');
-        if (!navbar) return;
-        const heroHeight = window.innerHeight; // Height of hero section
-        const scrollThreshold = heroHeight * 0.4; // Show when 40% of hero is scrolled
-
-        if (window.scrollY > scrollThreshold) {
-            navbar.style.top = '0px'; // Slide down
+    const navbar = document.getElementById('navbar');
+    const heroSection = document.querySelector('.hero-wildhood');
+    
+    if (navbar) {
+        if (!heroSection) {
+            // If no hero section (e.g., subpages), show navbar immediately
+            navbar.classList.add('nav-visible');
         } else {
-            navbar.style.top = '-100px'; // Hide
+            // Toggle visibility based on scroll depth on the homepage
+            window.addEventListener('scroll', () => {
+                const scrollThreshold = window.innerHeight * 0.9; 
+                if (window.scrollY > scrollThreshold) {
+                    navbar.classList.add('nav-visible');
+                } else {
+                    navbar.classList.remove('nav-visible');
+                }
+            });
+            // Initialize correct state on load
+            window.dispatchEvent(new Event('scroll'));
         }
-    });
+    }
 
     // 11. Create Lucide Icons
     if (window.lucide) {
         lucide.createIcons();
     }
+
+
 });
