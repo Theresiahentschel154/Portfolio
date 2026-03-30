@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +15,6 @@
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-
 <body><div class="grainy-overlay"></div>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -24,17 +22,17 @@
             <a href="index.html" class="logo">Theresia<span class="logo-accent">Hent</span></a>
             <ul class="nav-links">
                 <li><a href="about.html">Über mich</a></li>
-                <li><a href="projects.html">Projekte</a></li>
+                <li><a href="projects.html" class="active">Projekte</a></li>
+                <li><a href="approach.html">Methodik</a></li>
             </ul>
         </div>
     </nav>
-
     <main>
         <div class="content-sheet">
             <!-- All Projects Section -->
             <section class="section" id="all-projects">
                 <div class="section-header reveal visible">
-                    <div class="badge">Portfolio '24</div>
+                    <span class="category">Showcase</span>
                     <h2>Design <br>Projects</h2>
                 </div>
                 <div class="projects-grid">
@@ -48,7 +46,6 @@
                             </div>
                         </div>
                     </a>
-
                     <!-- Projekt 2: Gewalt gegen Frauen -->
                     <a href="project-gewalt.html" class="project-card reveal visible">
                         <div class="project-image">
@@ -59,7 +56,6 @@
                             </div>
                         </div>
                     </a>
-
                     <!-- Projekt 3: WG-Wizard -->
                     <a href="project-wgwizard.html" class="project-card reveal visible">
                         <div class="project-image">
@@ -72,14 +68,13 @@
                     </a>
                 </div>
             </section>
-
             <!-- Photography Section -->
             <section class="section" id="photography">
                 <div class="section-header reveal visible">
-                    <div class="badge">Unsplash Photographer</div>
+                    <span class="category">Fotografie</span>
                     <h2>Photos</h2>
                     <div class="header-actions">
-                        <a href="https://unsplash.com/de/@theresiahent" target="_blank" class="badge">Unsplash <i data-lucide="external-link" style="width: 12px; height: 12px;"></i></a>
+                        <a href="https://unsplash.com/de/@theresiahent" target="_blank" class="category" style="font-size: 0.7rem; letter-spacing: 2px;">Unsplash <i data-lucide="external-link" style="width: 12px; height: 12px;"></i></a>
                     </div>
                 </div>
                 <div class="photo-grid">
@@ -101,11 +96,10 @@
                     </a>
                 </div>
             </section>
-
             <!-- Experiments Section -->
             <section class="section" id="experiments">
                 <div class="section-header reveal visible">
-                    <div class="badge">Creative Coding</div>
+                    <span class="category">Creative Coding</span>
                     <h2>Creative <br>Lab</h2>
                 </div>
                 <div class="experiments-grid">
@@ -127,15 +121,13 @@
             </section>
         </div>
     </main>
-
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-top-grid">
                 <div class="footer-col reveal">
                     <h4>Follow me</h4>
                     <ul>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="https://unsplash.com/@theresiahent" target="_blank">Unsplash</a></li>
                         <li><a href="#">Behance</a></li>
                     </ul>
                 </div>
@@ -143,25 +135,24 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><a href="mailto:theresiahentschel154@gmail.com">theresiahentschel154@gmail.com</a></li>
+                        <li><a href="about.html#contact">Kontaktformular</a></li>
                     </ul>
                 </div>
                 <div class="footer-col reveal">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="#">Impressum</a></li>
-                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="footer-brand-huge reveal">
+        <!-- Moved -->
             <div class="footer-brand-track">
-                <h2>THERESIA HENTSCHEL</h2>
                 <h2>THERESIA HENTSCHEL</h2>
             </div>
         </div>
-    </footer>
-
+    </div></footer>
     <script src="script.js"></script>
     <script>lucide.createIcons();</script>
 </body>

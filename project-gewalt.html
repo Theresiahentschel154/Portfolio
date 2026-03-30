@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +11,17 @@
         rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-
-
         .project-hero {
             background: var(--bg-sage);
             padding: 120px 0 80px;
             text-align: left;
             color: var(--text-dark);
         }
-
         .container-thin {
             max-width: 900px;
             margin: 0 auto;
             padding: 0 40px;
         }
-
         .project-meta {
             display: flex;
             gap: 40px;
@@ -34,7 +29,6 @@
             padding-top: 40px;
             border-top: 1px solid rgba(0, 0, 0, 0.1);
         }
-
         .meta-item span {
             display: block;
             font-size: 0.75rem;
@@ -44,31 +38,26 @@
             font-weight: 800;
             margin-bottom: 5px;
         }
-
         .meta-item p {
             font-weight: 600;
             font-size: 1rem;
             color: var(--text-dark);
         }
-
         .research-section {
             padding: 100px 0;
             background: #ffffff;
             color: var(--text-dark);
         }
-
         .research-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
             margin-top: 40px;
         }
-
         .figma-section {
             background: #ffffff;
             padding: 100px 0;
         }
-
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -80,7 +69,6 @@
             margin: 40px 0;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
         }
-
         .video-container iframe,
         .video-container video {
             position: absolute;
@@ -90,14 +78,12 @@
             height: 100%;
             border: none;
         }
-
         .frame-slider-container {
             position: relative;
             margin-top: 40px;
             display: flex;
             align-items: center;
         }
-
         .frame-slider {
             display: flex;
             gap: 30px;
@@ -107,25 +93,21 @@
             scrollbar-width: none;
             /* Firefox */
         }
-
         .frame-slider::-webkit-scrollbar {
             display: none;
             /* Chrome, Safari, Opera */
         }
-
         .frame-item {
             flex: 0 0 auto;
             width: 280px;
             /* Width optimized for portrait/mobile frames */
         }
-
         .frame-item img {
             width: 100%;
             display: block;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         }
-
         .slider-nav {
             position: absolute;
             top: 50%;
@@ -144,28 +126,23 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-
         .slider-nav:hover {
             background: #000;
             color: var(--accent-orange);
             transform: translateY(-50%) scale(1.1);
         }
-
         .slider-nav.prev {
             left: -25px;
         }
-
         .slider-nav.next {
             right: -25px;
         }
-
         .back-nav {
             position: fixed;
             top: 40px;
             left: 40px;
             z-index: 100;
         }
-
         .btn-back {
             display: flex;
             align-items: center;
@@ -181,14 +158,12 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
             border: 1px solid rgba(0,0,0,0.1);
         }
-
         .btn-back:hover {
             transform: translateX(-5px);
             background: var(--accent-orange);
             color: #000;
             border-color: var(--accent-orange);
         }
-
         h2 {
             font-family: var(--font-heading);
             font-size: 3.5rem;
@@ -196,7 +171,6 @@
             letter-spacing: -2px;
             text-transform: uppercase;
         }
-
         p {
             line-height: 1.6;
             color: var(--text-dark);
@@ -205,7 +179,6 @@
         }
     </style>
 </head>
-
 <body><div class="grainy-overlay"></div>
     <!-- Premium Back Button -->
     <div class="back-nav">
@@ -213,11 +186,8 @@
             <i data-lucide="arrow-left"></i> Zurück zum Portfolio
         </a>
     </div>
-
     <!-- Project Hero -->
     <header class="project-hero" style="position: relative; overflow: hidden;">
-
-
         <div class="container-thin">
             <span class="category" style="margin-bottom: 20px;">Uni Projekt 2024</span>
             <h1 class="reveal"
@@ -227,7 +197,6 @@
             <p style="font-size: 1.4rem; max-width: 600px; color: rgba(0, 0, 0, 0.7); font-weight: 500;">
                 Eine digitale Plattform zur Aufklärung, Prävention und Unterstützung von Betroffenen.
             </p>
-
             <div class="project-meta">
                 <div class="meta-item reveal reveal-delay-1">
                     <span>Rolle</span>
@@ -242,7 +211,6 @@
                     <p>Figma</p>
                 </div>
             </div>
-
             <div style="margin-top: 40px;">
                 <a href="assets/research-gewalt.pdf" target="_blank" class="btn btn-accent"
                     style="display: inline-flex; align-items: center; gap: 12px; padding: 14px 28px;">
@@ -251,7 +219,6 @@
             </div>
         </div>
     </header>
-
     <!-- Animated Project Ticker -->
     <div class="skills-bar" style="margin-top: 0; border-top: 0; background: #ffffff; color: var(--text-dark);">
         <div class="skills-track">
@@ -266,7 +233,6 @@
             <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
             <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="figma" style="color: var(--accent-orange);"></i> Figma</div>
             <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
-
             <!-- Set 2 -->
             <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="shield" style="color: var(--accent-orange);"></i> Awareness</div>
             <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
@@ -278,7 +244,6 @@
             <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
             <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="figma" style="color: var(--accent-orange);"></i> Figma</div>
             <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
-
             <!-- Set 3 -->
             <div class="skill-item" style="color: var(--text-dark);"><i data-lucide="shield" style="color: var(--accent-orange);"></i> Awareness</div>
             <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
@@ -292,15 +257,14 @@
             <div class="skill-separator" style="background: rgba(0, 0, 0, 0.1);"></div>
         </div>
     </div>
-
     <!-- Research Section -->
     <section class="research-section">
         <div class="container-thin">
-            <h2 class="reveal">Das Projekt</h2>
+            <span class="category">Das Projekt</span>
+            <h2 class="reveal">Kontext</h2>
             <p class="reveal">
                 Gewalt gegen Frauen ist ein hochsensibles Thema, das oft mit großen Hürden bei der Suche nach Hilfe verbunden ist. Das Ziel dieses Projekts war es, eine digitale Plattform zu konzipieren, die nicht nur aufklärt, sondern Betroffenen einen sicheren und barrierefreien Zugang zu Hilfsangeboten bietet. Der gesamte Gestaltungsprozess basierte tief auf <strong>empathischem Design und User Research</strong>, um eine Umgebung zu schaffen, die Schutz und Orientierung in Krisensituationen vermittelt.
             </p>
-
             <div class="research-grid">
                 <div class="research-card reveal">
                     <h3 style="margin-bottom: 15px; color: var(--text-dark);">Nutzerzentrierter Ansatz</h3>
@@ -311,14 +275,12 @@
                     <p style="font-size: 0.95rem;">Implementierung eines "Quick Exit" Buttons und eines getarnten Browserverlaufs, um den absoluten Schutz der Privatsphäre in Notfällen zu gewährleisten.</p>
                 </div>
             </div>
-
-
         </div>
     </section>
-
     <!-- Video / Showcase -->
     <section class="research-section" style="background: var(--bg-sage); color: var(--text-dark);">
         <div class="container-thin">
+            <span class="category" style="display: block; text-align: center; margin-bottom: 25px;">Showcase</span>
             <h2 style="color: var(--text-dark); text-align: center;">Website Walkthrough</h2>
             <div class="video-container" style="background: rgba(0, 0, 0, 0.1);">
                 <!-- Replace with your actual video file or iframe later -->
@@ -331,18 +293,16 @@
                 Journey.</p>
         </div>
     </section>
-
     <!-- Figma Frames -->
     <section class="figma-section">
         <div class="container-thin">
+            <span class="category">Entwürfe</span>
             <h2>Figma Frames</h2>
             <p>Ein Einblick in die High-Fidelity Prototypen und das Design System.</p>
-
             <div class="frame-slider-container">
                 <button class="slider-nav prev" onclick="scrollSlider(-1)">
                     <i data-lucide="chevron-left"></i>
                 </button>
-
                 <div class="frame-slider" id="frameSlider">
                     <!-- Frame 1 -->
                     <div class="frame-item">
@@ -380,24 +340,19 @@
                             Information Page</p>
                     </div>
                 </div>
-
                 <button class="slider-nav next" onclick="scrollSlider(1)">
                     <i data-lucide="chevron-right"></i>
                 </button>
             </div>
         </div>
     </section>
-
-
-
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-top-grid">
                 <div class="footer-col reveal">
                     <h4>Follow me</h4>
                     <ul>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="https://unsplash.com/@theresiahent" target="_blank">Unsplash</a></li>
                         <li><a href="#">Behance</a></li>
                     </ul>
                 </div>
@@ -405,6 +360,7 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><a href="mailto:theresiahentschel154@gmail.com">theresiahentschel154@gmail.com</a></li>
+                        <li><a href="about.html#contact">Kontaktformular</a></li>
                     </ul>
                 </div>
                 <div class="footer-col reveal">
@@ -416,18 +372,15 @@
                 </div>
             </div>
         </div>
-        <div class="footer-brand-huge reveal">
+        <!-- Moved -->
             <div class="footer-brand-track">
-                <h2>THERESIA HENTSCHEL</h2>
                 <h2>THERESIA HENTSCHEL</h2>
             </div>
         </div>
-    </footer>
-
+    </div></footer>
     <script src="script.js"></script>
     <script>
         // lucide.createIcons(); // Now handled in script.js
-
         function scrollSlider(direction) {
             const slider = document.getElementById('frameSlider');
             const scrollAmount = 310; // 280px width + 30px gap
@@ -438,5 +391,4 @@
         }
     </script>
 </body>
-
 </html>

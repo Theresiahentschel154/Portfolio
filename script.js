@@ -1,4 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+    // Email click interaction for all mailto links
+    const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+    emailLinks.forEach(link => {
+        link.classList.add('email-link');
+        link.addEventListener('click', (e) => {
+            // Default behavior handles opening mail client, but we can add a small feedback ripple or logic here if needed
+            console.log('Opening mail client for:', link.getAttribute('href'));
+        });
+    });
+
+    // --- Smooth Page Transitions ---
+    const transitionOverlay = document.createElement('div');
+    transitionOverlay.classList.add('page-transition-overlay');
+    document.body.appendChild(transitionOverlay);
+
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            
+            // Only transition for internal links that aren't anchors/placeholders
+            if (href && !href.startsWith('#') && !href.startsWith('mailto:') && !link.hasAttribute('target')) {
+                e.preventDefault();
+                document.body.classList.add('is-transitioning');
+                
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 800); // Matches CSS transition duration
+            }
+        });
+    });
+
+    // Standard cursor restored (JS line removed)
+
     // 2. Scroll Animation (IntersectionObserver)
     const revealElements = document.querySelectorAll('.reveal');
 

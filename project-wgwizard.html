@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,20 +14,17 @@
             background: #f5f1ed;
             color: #2d2d2d;
         }
-
         .project-hero {
             background: #f5f1ed;
             padding: 120px 0 80px;
             text-align: left;
             color: #b32c24;
         }
-
         .container-thin {
             max-width: 900px;
             margin: 0 auto;
             padding: 0 40px;
         }
-
         .project-meta {
             display: flex;
             gap: 40px;
@@ -36,7 +32,6 @@
             padding-top: 40px;
             border-top: 1px solid rgba(179, 44, 36, 0.2);
         }
-
         .meta-item span {
             display: block;
             font-size: 0.75rem;
@@ -46,29 +41,24 @@
             font-weight: 800;
             margin-bottom: 5px;
         }
-
         .meta-item p {
             font-weight: 600;
             font-size: 1rem;
             color: #b32c24;
         }
-
         .research-section {
             padding: 100px 0;
         }
-
         .research-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
             margin-top: 40px;
         }
-
         .figma-section {
             background: #f8f9f8;
             padding: 100px 0;
         }
-
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -79,7 +69,6 @@
             margin: 40px 0;
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
         }
-
         .video-container video {
             position: absolute;
             top: 0;
@@ -88,14 +77,12 @@
             height: 100%;
             border: none;
         }
-
         .frame-slider-container {
             position: relative;
             margin-top: 40px;
             display: flex;
             align-items: center;
         }
-
         .frame-slider {
             display: flex;
             gap: 30px;
@@ -104,23 +91,19 @@
             padding: 20px 0;
             scrollbar-width: none;
         }
-
         .frame-slider::-webkit-scrollbar {
             display: none;
         }
-
         .frame-item {
             flex: 0 0 auto;
             width: 280px;
         }
-
         .frame-item img {
             width: 100%;
             display: block;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         }
-
         .slider-nav {
             position: absolute;
             top: 50%;
@@ -139,28 +122,23 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-
         .slider-nav:hover {
             background: #000;
             color: #fff;
             transform: translateY(-50%) scale(1.1);
         }
-
         .slider-nav.prev {
             left: -25px;
         }
-
         .slider-nav.next {
             right: -25px;
         }
-
         .back-nav {
             position: fixed;
             top: 40px;
             left: 40px;
             z-index: 100;
         }
-
         .btn-back {
             display: flex;
             align-items: center;
@@ -175,20 +153,17 @@
             box-shadow: 0 10px 20px rgba(106, 141, 115, 0.2);
             text-decoration: none;
         }
-
         .btn-back:hover {
             transform: translateX(-5px);
             background: #000;
             color: #fff;
         }
-
         h2 {
             font-family: 'Plus Jakarta Sans', sans-serif;
             font-size: 2.5rem;
             margin-bottom: 30px;
             letter-spacing: -1px;
         }
-
         p {
             line-height: 1.6;
             color: #555;
@@ -196,7 +171,6 @@
         }
     </style>
 </head>
-
 <body><div class="grainy-overlay"></div>
     <!-- Premium Back Button -->
     <div class="back-nav">
@@ -204,15 +178,13 @@
             <i data-lucide="arrow-left"></i> Zurück zum Portfolio
         </a>
     </div>
-
     <!-- Project Hero -->
     <header class="project-hero" style="position: relative; overflow: hidden;">
         <!-- Floating decorative element -->
         <i data-lucide="wand-2" class="floating-hero-icon"
             style="position: absolute; right: 5%; bottom: 10%; font-size: 20rem; color: rgba(255, 255, 255, 0.05); transform: rotate(25deg); pointer-events: none; width: 300px; height: 300px;"></i>
-
         <div class="container-thin">
-            <div class="badge" style="margin-bottom: 20px;">Uni Projekt 2024</div>
+            <span class="category" style="margin-bottom: 20px;">Uni Projekt 2024</span>
             <h1 class="reveal"
                 style="font-size: clamp(3rem, 8vw, 5rem); font-weight: 800; line-height: 1; letter-spacing: -3px; margin-bottom: 30px;">
                 WG-<span style="color: #b32c24;">Wizard.</span>
@@ -220,7 +192,6 @@
             <p style="font-size: 1.4rem; max-width: 600px; color: rgba(255, 255, 255, 0.7); font-weight: 500;">
                 Uni Projekt einer App für WG-Planung – Intuitiv, kollaborativ und stressfrei.
             </p>
-
             <div class="project-meta">
                 <div class="meta-item">
                     <span>Rolle</span>
@@ -235,7 +206,6 @@
                     <p>Figma</p>
                 </div>
             </div>
-
             <div style="margin-top: 40px;">
                 <a href="#" class="btn primary"
                     style="display: inline-flex; align-items: center; gap: 12px; padding: 14px 28px;">
@@ -244,7 +214,6 @@
             </div>
         </div>
     </header>
-
     <!-- Animated Project Ticker -->
     <div class="skills-bar" style="margin-top: 0; border-top: 0; background: #f5f1ed; color: #b32c24;">
         <div class="skills-track">
@@ -258,7 +227,6 @@
             <div class="skill-separator" style="background: rgba(255, 255, 255, 0.3);"></div>
             <div class="skill-item" style="color: #b32c24;"><i data-lucide="figma"></i> Figma</div>
             <div class="skill-separator" style="background: rgba(255, 255, 255, 0.3);"></div>
-
             <!-- Loop 2 -->
             <div class="skill-item" style="color: #b32c24;"><i data-lucide="wand-2"></i> WG-Planning</div>
             <div class="skill-separator" style="background: rgba(255, 255, 255, 0.3);"></div>
@@ -270,7 +238,6 @@
             <div class="skill-separator" style="background: rgba(255, 255, 255, 0.3);"></div>
             <div class="skill-item" style="color: #b32c24;"><i data-lucide="figma"></i> Figma</div>
             <div class="skill-separator" style="background: rgba(255, 255, 255, 0.3);"></div>
-
             <!-- Loop 3 -->
             <div class="skill-item" style="color: #b32c24;"><i data-lucide="wand-2"></i> WG-Planning</div>
             <div class="skill-separator" style="background: rgba(255, 255, 255, 0.3);"></div>
@@ -284,17 +251,16 @@
             <div class="skill-separator" style="background: rgba(255, 255, 255, 0.3);"></div>
         </div>
     </div>
-
     <!-- Research Section -->
     <section class="research-section">
         <div class="container-thin">
+            <span class="category">Research</span>
             <h2 class="reveal">Hintergrund & Research</h2>
             <p>
                 Das WG-Leben kann oft herausfordernd sein. Basierend auf dem <strong>Design Thinking Prinzip</strong>
                 haben wir die größten Schmerzpunkte in Wohngemeinschaften identifiziert: Kommunikation, Finanzen und
                 Sauberkeit.
             </p>
-
             <div class="research-grid">
                 <div class="research-card reveal">
                     <h3 style="margin-bottom: 15px; color: #2d2d2d;">User Insights</h3>
@@ -309,10 +275,10 @@
             </div>
         </div>
     </section>
-
     <!-- Video / Showcase -->
     <section class="research-section" style="background: #f5f1ed; color: #b32c24;">
         <div class="container-thin">
+            <span class="category" style="display: block; text-align: center; margin-bottom: 25px;">Showcase</span>
             <h2 style="color: #b32c24; text-align: center;">App Showcase</h2>
             <div class="video-container" style="background: rgba(255, 255, 255, 0.1);">
                 <div
@@ -324,18 +290,16 @@
                 App-Funktionen.</p>
         </div>
     </section>
-
     <!-- Figma Frames -->
     <section class="figma-section">
         <div class="container-thin">
+            <span class="category">Interface</span>
             <h2>Interface Design</h2>
             <p>Einblicke in die mobilen Screens und das User Interface Design.</p>
-
             <div class="frame-slider-container">
                 <button class="slider-nav prev" onclick="scrollSlider(-1)">
                     <i data-lucide="chevron-left"></i>
                 </button>
-
                 <div class="frame-slider" id="frameSlider">
                     <div class="frame-item">
                         <img src="assets/wg_wizard_mockup.jpg" alt="WG-Wizard Frame 1">
@@ -362,22 +326,19 @@
                             Shopping List</p>
                     </div>
                 </div>
-
                 <button class="slider-nav next" onclick="scrollSlider(1)">
                     <i data-lucide="chevron-right"></i>
                 </button>
             </div>
         </div>
     </section>
-
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-top-grid">
                 <div class="footer-col reveal">
                     <h4>Follow me</h4>
                     <ul>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="https://unsplash.com/@theresiahent" target="_blank">Unsplash</a></li>
                         <li><a href="#">Behance</a></li>
                     </ul>
                 </div>
@@ -385,6 +346,7 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><a href="mailto:theresiahentschel154@gmail.com">theresiahentschel154@gmail.com</a></li>
+                        <li><a href="about.html#contact">Kontaktformular</a></li>
                     </ul>
                 </div>
                 <div class="footer-col reveal">
@@ -396,18 +358,15 @@
                 </div>
             </div>
         </div>
-        <div class="footer-brand-huge reveal">
+        <!-- Moved -->
             <div class="footer-brand-track">
-                <h2>THERESIA HENTSCHEL</h2>
                 <h2>THERESIA HENTSCHEL</h2>
             </div>
         </div>
-    </footer>
-
+    </div></footer>
     <script src="script.js"></script>
     <script>
         // lucide.createIcons(); // Now handled in script.js
-
         function scrollSlider(direction) {
             const slider = document.getElementById('frameSlider');
             const scrollAmount = 310;
@@ -418,5 +377,4 @@
         }
     </script>
 </body>
-
 </html>

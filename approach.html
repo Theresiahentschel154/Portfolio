@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodik | Theresia Hentschel Portfolio</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@500;700;800&family=Italianno&family=Syne:wght@400;700;800&family=Caveat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .approach-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 120px;
+            margin-top: 60px;
+        }
+        .step {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 60px;
+        }
+        .step-number {
+            font-family: var(--font-heading);
+            font-size: 8rem;
+            line-height: 0.8;
+            color: var(--accent-orange);
+            opacity: 0.2;
+        }
+        .step-content h3 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .step-content p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+        .ai-integration-box {
+            background: #222;
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-top: 40px;
+            border-left: 5px solid var(--accent-orange);
+        }
+        .ai-integration-box h4 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        @media (max-width: 900px) {
+            .step {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .step-number {
+                font-size: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grainy-overlay"></div>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Theresia<span class="logo-accent">Hent</span></a>
+            <ul class="nav-links">
+                <li><a href="about.html">Über mich</a></li>
+                <li><a href="projects.html">Projekte</a></li>
+                <li><a href="approach.html" class="active">Methodik</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="content-sheet">
+            <section class="section">
+                <div class="section-header reveal">
+                    <span class="category">My Logic</span>
+                    <h2>Design <br>Process & <br>AI Synergy</h2>
+                </div>
+                <div class="approach-grid">
+                    <!-- Step 1 -->
+                    <div class="step reveal">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Research & Discovery</h3>
+                            <p>Jedes Projekt beginnt mit tiefem Verständnis. Ich analysiere Nutzerbedürfnisse, Markttrends und technische Rahmenbedingungen.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="step reveal">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Conceptual Design</h3>
+                            <p>Hier entstehen Visionen. Ich entwickle Wireframes und User Flows, um die Architektur des Erlebnisses festzulegen.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3: AI Focus -->
+                    <div class="step reveal">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>AI-Augmented Prototyping</h3>
+                            <p>In der Umsetzung nutze ich modernste Tools. KI ist für mich kein Ersatz, sondern ein mächtiger Partner, der Routineaufgaben beschleunigt und kreative Horizonte erweitert.</p>
+                            <div class="ai-integration-box">
+                                <h4><i data-lucide="cpu"></i> Die Rolle der KI</h4>
+                                <p>Ich sehe KI als zukunftsrelevantes Werkzeug. Durch den Einsatz von generativen Modellen in meinem Workflow lerne ich, effizienter zu arbeiten und komplexere Lösungen schneller zu validieren.</p>
+                                <p><strong>Wichtig:</strong> Die KI ersetzt nicht meine kreative Arbeit oder meine Entscheidungskraft. Sie dient als digitaler Sparringspartner, um technische Hürden zu nehmen und innovativere UX-Muster zu explorieren.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="step reveal">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Refinement & Delivery</h3>
+                            <p>Der letzte Schliff ist entscheidend. Ich poliere Animationen, optimiere Interaktionen und stelle sicher, dass das Endprodukt höchsten Qualitätsstandards entspricht.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <!-- Footer reused -->
+        <div class="footer-container">
+            <div class="footer-top-grid">
+                <div class="footer-col reveal">
+                    <h4>Follow me</h4>
+                    <ul>
+                        <li><a href="https://unsplash.com/@theresiahent" target="_blank">Unsplash</a></li>
+                        <li><a href="#">Behance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:theresiahentschel154@gmail.com">theresiahentschel154@gmail.com</a></li>
+                        <li><a href="about.html#contact">Kontaktformular</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col reveal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Moved -->
+            <div class="footer-brand-track">
+                <h2>THERESIA HENTSCHEL</h2>
+            </div>
+        </div>
+    </div></footer>
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
